@@ -1,74 +1,40 @@
+#FindYourDuo_App # FindYourDuo App
 
-# Find You Duo
+**Tags**: #CSS #Docker #Express #Html #JavaScript #Markdown #Node #Prisma #React #Tailwind #TypeScript
 
-Esse foi o projeto criado com o tema eSports no evento NLW eSports da rocketseat, sem dúvidas esse foi o melhor evento, nele foi criado uma página com a lista de games, e um modal possibilitando cria um anúncio com suas informações, assim possibilitando acha um duo para seu game favorito 
-## 🔗 Contato
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipe-r-silva/)
-[![github](https://img.shields.io/badge/github-1DA1F2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/felipe-rodrigues-s)
+**Status**: `#Project/Fullstack` `#React` `#Node` `#Mobile`
 
+## 📝 Descrição
+O **FindYourDuo** é uma plataforma completa (Web, Server, Mobile) para conectar gamers que desejam encontrar parceiros (duos) para jogar online.
 
-## Demonstração
+## 🔗 Repositório
+projeto criado no evento NLW eSports.
 
-<div aling='center'>
-    <img src='https://github.com/felipe-rodrigues-s/imagens/blob/main/icon/Design%20sem%20nome.gif'/>
-</div>
+## 🚀 Como Rodar (Docker)
 
-## Instalação
+O ambiente completo (Back + Front) sobem com um único comando.
 
-Antes de executar faça
+### Pré-requisitos
+- Docker & Docker Compose.
 
-```bash
-  npm install
-```
-```bash
-  npx prisma generate
-```
-    
-## Variáveis de Ambiente
+### Passos
+1. Navegue até a pasta:
+   ```bash
+   cd 01_Projetos/FindYourDuo_App
+   ```
+2. Inicie os serviços:
+   ```bash
+   docker-compose up --build
+   ```
+   Isso iniciará:
+   - **Server** (Node.js/Prisma/SQLite) na porta `3333`
+   - **Web** (Vite/React/Nginx) na porta `5173` (mapeada para 80 interna)
 
-Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+### Endpoints
+- **API**: http://localhost:3333
+- **Web**: http://localhost:5173
 
-`DATABASE_URL="file:../src/database/db.sqlite"`
-
-
-
-## Documentação da API
-
-#### Retorna todos os games
-
-```http
-  GET /games
-```
-
-| Descrição                           |
-| :---------------------------------- |
-| Retornara todos os games salvos no BD 
-Se desejar adicionar games basta usar a feramenta prisma studio|
-
-#### Retorna dados de um game
-
-```http
-  GET /games/:id/ads
-```
-
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
-
-#### Adicionar um anúncio
-
-```http
-  POST /games/:id/ads
-```
-
-| Parâmetro   | Tipo       | 
-| :---------- | :--------- | 
-| `gameId`      | `string` | 
-| `id`      | `string` | 
-| `name`      | `string` | 
-| `yarsPlayng`      | `Int` |
-| `discord`      | `string` |
-| `weekDays`      | `string` | 
-| `hourStart`      | `Int` | 
-| `houtEnd`      | `Int` | 
-| `useVoiceChannel`      | `Boolean` |
+## 📂 Módulos
+- **`server/`**: API RESTful com Express e Prisma.
+- **`web/`**: Frontend web com React e Tailwind.
+- **`mobile/`**: App mobile (React Native). *Nota: O Docker Compose atual cobre Server e Web.*
