@@ -32,5 +32,19 @@
     "@types/react-native": "~0.69.1",
     "typescript": "~4.3.5"
   },
-  "private": true
+  "private": true,
+  "description": "**Status**: `#Project/Fullstack` `#React` `#Node` `#Mobile`",
+  "keywords": [
+    "css",
+    "docker",
+    "express",
+    "html",
+    "javascript",
+    "markdown",
+    "node",
+    "prisma",
+    "react",
+    "tailwind",
+    "typescript"
+  ]
 }

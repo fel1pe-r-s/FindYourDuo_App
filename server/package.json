@@ -19,5 +19,18 @@
     "@types/express": "^4.17.13",
     "prisma": "^4.3.1",
     "ts-node-dev": "^2.0.0"
-  }
+  },
+  "keywords": [
+    "css",
+    "docker",
+    "express",
+    "html",
+    "javascript",
+    "markdown",
+    "node",
+    "prisma",
+    "react",
+    "tailwind",
+    "typescript"
+  ]
 }
