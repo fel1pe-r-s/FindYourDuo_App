@@ -1,6 +1,6 @@
 #FindYourDuo_App # FindYourDuo App
 
-**Tags**: #CSS #Docker #Express #Html #JavaScript #Markdown #Node #Prisma #React #Tailwind #TypeScript
+**Tags**: #CSS #Database #Docker #Express #Html #JavaScript #Markdown #Node #Prisma #React #Tailwind #TypeScript
 
 **Status**: `#Project/Fullstack` `#React` `#Node` `#Mobile`
 
